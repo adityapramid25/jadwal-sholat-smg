@@ -230,13 +230,13 @@ const App: React.FC = () => {
   };
 
   const prayerList: Prayer[] = prayerData ? [
-      { name: 'Imsak', time: prayerData.timings.Imsak, icon: ImsakIcon, description: "The time to stop eating and drinking for fasting." },
-      { name: 'Subuh', time: prayerData.timings.Fajr, icon: FajrIcon, description: "The dawn prayer, marking the beginning of the day's spiritual journey." },
-      { name: 'Terbit', time: prayerData.timings.Sunrise, icon: SunriseIcon, description: "Sunrise. The time when the morning prayer (Subuh) period ends." },
+      { name: 'Imsak', time: prayerData.timings.Imsak, icon: ImsakIcon, description: "Pengingat untuk berhenti makan dan minum sebelum subuh sebagai persiapan puasa.." },
+      { name: 'Subuh', time: prayerData.timings.Fajr, icon: FajrIcon, description: "Waktu untuk melaksanakan sholat di waktu pagi, dimulai sebelum matahari terbit" },
+      { name: 'Fajar', time: prayerData.timings.Sunrise, icon: SunriseIcon, description: "Terbitnya cahaya pagi pertama di ufuk timur sebelum matahari muncul." },
       { name: 'Dzuhur', time: prayerData.timings.Dhuhr, icon: DhuhrIcon, description: "The midday prayer, a moment of pause and remembrance in the midst of daily activities." },
-      { name: 'Ashar', time: prayerData.timings.Asr, icon: AsrIcon, description: "The afternoon prayer, a time for reflection as the day begins to wane." },
-      { name: 'Maghrib', time: prayerData.timings.Maghrib, icon: MaghribIcon, description: "The sunset prayer, performed just after the sun has set." },
-      { name: 'Isya', time: prayerData.timings.Isha, icon: IshaIcon, description: "The night prayer, the final prayer of the day, offering peace before rest." },
+      { name: 'Ashar', time: prayerData.timings.Asr, icon: AsrIcon, description: "Waktu sholat sore menjelang senja, ketika bayangan benda lebih panjang dari aslinya." },
+      { name: 'Maghrib', time: prayerData.timings.Maghrib, icon: MaghribIcon, description: "Waktu sholat saat matahari terbenam dan langit mulai gelap." },
+      { name: 'Isya', time: prayerData.timings.Isha, icon: IshaIcon, description: "Waktu sholat malam setelah gelap total hingga tengah malam." },
   ] : [];
 
   return (
